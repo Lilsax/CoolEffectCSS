@@ -1,0 +1,129 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;900&display=swap');
+
+.contain {
+    max-width: 1024;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.nav-class {
+    z-index: 50;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-top: 20px;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+
+    .female {
+        font-weight: 400;
+        cursor: pointer;
+    }
+
+    span:hover  {
+        font-weight: 400;
+        cursor: pointer;
+    }
+
+    & .hhh {
+        color: black;
+        display: inline-block;
+        font-size: 40px;
+        font-weight: 400;
+        letter-spacing: 9px;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: -20px;
+    }
+
+    & .first-nav-div {
+        color: black;
+        display: flex;
+        font-weight: 200;
+        justify-content: space-between;
+        margin-left: 10px;
+        
+        & :not(:last-child) {
+            margin-right: 40px;
+        }
+
+        & :first-child:hover ~ .woman-div {
+            visibility: visible;
+            font-weight: 400;
+            cursor: pointer;
+        }
+    }
+
+    & .second-nav-div {
+        font-weight: 200;
+        color: black;
+        display: flex;
+        justify-content: space-between;
+
+        & :not(:last-child) {
+            margin-right: 40px;
+        }
+    }
+
+        & .woman-div-hidden {
+            visibility: hidden;
+            width: 100%;
+            color: black;
+            font-weight: 200;
+            background-color: white;
+            display: flex;
+            position: absolute;
+            top: 70px;
+            margin-left: 90px;
+
+            & div {
+                display: flex;
+            }
+
+            & li {
+                list-style-type: none;
+            }
+
+            & li:hover {
+                border-bottom: 1px rgba(0, 0, 0, 0.212) solid;
+                cursor: pointer;
+            }
+        }
+        
+        & .woman-div-show ,.woman-div-show:hover {
+            z-index: 10;
+            width: 100%;
+            color: black;
+            font-weight: 200;
+            background-color: white;
+            display: flex;
+            position: absolute;
+            top: 65px;
+            margin-left: 180px;
+
+            & div {
+                display: flex;
+            }
+
+            & li {
+                list-style-type: none;
+            }
+
+            & li:first-child {
+                font-weight: 400;
+            }
+
+            & li:last-child {
+                font-weight: 400;
+                color: red;
+            }
+
+            & li:hover {
+                border-bottom: 1px rgba(0, 0, 0, 0.212) solid;
+                cursor: pointer;
+            }
+        }
+
+}
